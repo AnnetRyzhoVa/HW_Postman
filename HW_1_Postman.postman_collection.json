@@ -1,0 +1,631 @@
+{
+	"info": {
+		"_postman_id": "3f642182-11c6-4f55-9f12-7ccb1d15f661",
+		"name": "HW_1 Postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "EP1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5005/get_method?name=Anna&age=40",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"get_method"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Anna"
+						},
+						{
+							"key": "age",
+							"value": "40"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EP2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Anna",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "40",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "3000",
+							"type": "text"
+						},
+						{
+							"key": "children",
+							"value": "Alex",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5005/user_info_3",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"user_info_3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EP3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Anna",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "30",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "2000",
+							"type": "text"
+						},
+						{
+							"key": "children",
+							"value": "Alex",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5005/object_info_1?name=Anna&age=40&weight=65",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"object_info_1"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Anna"
+						},
+						{
+							"key": "age",
+							"value": "40"
+						},
+						{
+							"key": "weight",
+							"value": "65"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EP4",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5005/object_info_2?name=Anna&age=41&salary=4000",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"object_info_2"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Anna"
+						},
+						{
+							"key": "age",
+							"value": "41"
+						},
+						{
+							"key": "salary",
+							"value": "4000"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "EP4",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://162.55.220.72:5005/object_info_2?name=Anna&age=41&salary=4000",
+							"protocol": "http",
+							"host": [
+								"162",
+								"55",
+								"220",
+								"72"
+							],
+							"port": "5005",
+							"path": [
+								"object_info_2"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Anna"
+								},
+								{
+									"key": "age",
+									"value": "41"
+								},
+								{
+									"key": "salary",
+									"value": "4000"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "239"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.0.1 Python/3.8.10"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 09 May 2022 18:11:37 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"person\": {\n        \"u_age\": 41,\n        \"u_name\": [\n            \"Anna\",\n            4000,\n            41\n        ],\n        \"u_salary_5_years\": 16800\n    },\n    \"qa_salary_after_1.5_year\": 13200,\n    \"qa_salary_after_12_months\": 10800,\n    \"qa_salary_after_3.5_years\": 15200,\n    \"qa_salary_after_6_months\": 8000,\n    \"start_qa_salary\": 4000\n}"
+				}
+			]
+		},
+		{
+			"name": "EP5",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5005/object_info_3?name=Anna&age=41&salary=2000",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"object_info_3"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Anna"
+						},
+						{
+							"key": "age",
+							"value": "41"
+						},
+						{
+							"key": "salary",
+							"value": "2000"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "EP5",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://162.55.220.72:5005/object_info_3?name=Anna&age=41&salary=2000",
+							"protocol": "http",
+							"host": [
+								"162",
+								"55",
+								"220",
+								"72"
+							],
+							"port": "5005",
+							"path": [
+								"object_info_3"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Anna"
+								},
+								{
+									"key": "age",
+									"value": "41"
+								},
+								{
+									"key": "salary",
+									"value": "2000"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "184"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.0.1 Python/3.8.10"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 09 May 2022 18:13:00 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"age\": \"41\",\n    \"family\": {\n        \"children\": [\n            [\n                \"Alex\",\n                24\n            ],\n            [\n                \"Kate\",\n                12\n            ]\n        ],\n        \"pets\": {\n            \"cat\": {\n                \"age\": 3,\n                \"name\": \"Sunny\"\n            },\n            \"dog\": {\n                \"age\": 4,\n                \"name\": \"Luky\"\n            }\n        },\n        \"u_salary_1_5_year\": 8000\n    },\n    \"name\": \"Anna\",\n    \"salary\": 2000\n}"
+				}
+			]
+		},
+		{
+			"name": "EP6",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5005/object_info_4?name=Anna&age=41&salary=2000",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"object_info_4"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Anna"
+						},
+						{
+							"key": "age",
+							"value": "41"
+						},
+						{
+							"key": "salary",
+							"value": "2000"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "EP5",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://162.55.220.72:5005/object_info_3?name=Anna&age=41&salary=2000",
+							"protocol": "http",
+							"host": [
+								"162",
+								"55",
+								"220",
+								"72"
+							],
+							"port": "5005",
+							"path": [
+								"object_info_3"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Anna"
+								},
+								{
+									"key": "age",
+									"value": "41"
+								},
+								{
+									"key": "salary",
+									"value": "2000"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "184"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.0.1 Python/3.8.10"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 09 May 2022 18:13:00 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"age\": \"41\",\n    \"family\": {\n        \"children\": [\n            [\n                \"Alex\",\n                24\n            ],\n            [\n                \"Kate\",\n                12\n            ]\n        ],\n        \"pets\": {\n            \"cat\": {\n                \"age\": 3,\n                \"name\": \"Sunny\"\n            },\n            \"dog\": {\n                \"age\": 4,\n                \"name\": \"Luky\"\n            }\n        },\n        \"u_salary_1_5_year\": 8000\n    },\n    \"name\": \"Anna\",\n    \"salary\": 2000\n}"
+				}
+			]
+		},
+		{
+			"name": "EP7",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Anna",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "40",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "2500",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5005/user_info_2?name=Anna&age=40&salary=2500",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"user_info_2"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Anna"
+						},
+						{
+							"key": "age",
+							"value": "40"
+						},
+						{
+							"key": "salary",
+							"value": "2500"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "EP5",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://162.55.220.72:5005/object_info_3?name=Anna&age=41&salary=2000",
+							"protocol": "http",
+							"host": [
+								"162",
+								"55",
+								"220",
+								"72"
+							],
+							"port": "5005",
+							"path": [
+								"object_info_3"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Anna"
+								},
+								{
+									"key": "age",
+									"value": "41"
+								},
+								{
+									"key": "salary",
+									"value": "2000"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "184"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.0.1 Python/3.8.10"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 09 May 2022 18:13:00 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"age\": \"41\",\n    \"family\": {\n        \"children\": [\n            [\n                \"Alex\",\n                24\n            ],\n            [\n                \"Kate\",\n                12\n            ]\n        ],\n        \"pets\": {\n            \"cat\": {\n                \"age\": 3,\n                \"name\": \"Sunny\"\n            },\n            \"dog\": {\n                \"age\": 4,\n                \"name\": \"Luky\"\n            }\n        },\n        \"u_salary_1_5_year\": 8000\n    },\n    \"name\": \"Anna\",\n    \"salary\": 2000\n}"
+				}
+			]
+		}
+	]
+}
